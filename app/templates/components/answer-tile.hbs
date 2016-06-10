@@ -4,7 +4,7 @@
     <br>
   </div>
   <div class="col-xs-8">
-    "{{answer.content}}"
+    <span class="answer-content-text">"{{answer.content}}"</span>
     {{update-answer answer=answer updateAnswer="updateAnswer"}}
     <button class="delete-answer" {{action 'deleteAnswer' answer}}>Delete Answer</button>
   </div>
