@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'answer-board',
     environment: environment,
+    firebase: {
+    apiKey: "AIzaSyDAGRCK-onkm3z8exB0j7voGextzedDrvk",
+    authDomain: "answer-board.firebaseapp.com",
+    databaseURL: "https://answer-board.firebaseio.com",
+    storageBucket: "answer-board.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -1,7 +1,9 @@
 <div class="row">
-  For each loop for all questions goes here.
+  {{#each model as |question|}}
+    Test
+  {{/each}}
 </div>
 
 <div class="new-post-box">
-  New Question form goes here.
+  {{new-question saveQuestion="saveQuestion"}}
 </div>
