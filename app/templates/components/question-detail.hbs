@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-xs-4 detail-image-box">
+    <img class="detail-image" src={{question.image}}>
+  </div>
+
+  <div class="col-xs-8 detail-content">
+    <h1>{{question.content}}</h1>
+    <h2>Asked By: {{question.author}}</h2>
+    <p class="detail-body">{{question.note}}</p>
+  </div>
+
+</div>
+
+<div class="modify-buttons">
+
+  {{update-question question=question updateQuestion="updateQuestion"}}
+
+  <!-- <button {{action 'deleteQuestion' question}} class="delete-button">Delete This Question</button> -->
+
+</div>
+
+<div class="all-comments-box">
+  <h2>Answers on This Question</h2>
+
+  {{#if question.comments}}
+
+  {{#each question.comments as |comment|}}
+    <div class="single-comment">
+      <!-- {{comment-tile comment=comment deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}} -->
+    </div>
+  {{/each}}
+
+  {{else}}
+
+  <p>There are no answers to this question yet. Add one below!</p>
+
+  {{/if}}
+</div>
+
+<!-- {{new-comment saveAnswer="saveAnswer" question=question}} -->

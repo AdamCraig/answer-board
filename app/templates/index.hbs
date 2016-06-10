@@ -1,9 +1,9 @@
 <div class="row">
   {{#each model as |question|}}
-    Test
+    {{question-tile question=question}}
   {{/each}}
 </div>
 
-<div class="new-post-box">
+<div class="new-question-box">
   {{new-question saveQuestion="saveQuestion"}}
 </div>

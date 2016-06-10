@@ -7,8 +7,13 @@ export default Ember.Component.extend({
         content: this.get('content'),
         author: this.get('author'),
         note: this.get('note'),
+        image: this.get('image'),
       };
       this.sendAction('saveQuestion', params);
+      this.set('content', "");
+      this.set('author', "");
+      this.set('note', "");
+      this.set('image', "");
     }
   }
 });
