@@ -165,9 +165,18 @@ a:hover {
   width: 160px;
 }
 
+.avatar-choice {
+  width: 100%;
+  height: 100%;
+}
+
+.answer-avatar {
+  width: 100%;
+  height: 500px;
+}
+
 .selected-avatar {
   border: dotted #7f0000 5px;
-  border-radius: 50%;
 }
 
 .delete-comment {

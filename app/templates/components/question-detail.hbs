@@ -19,14 +19,14 @@
 
 </div>
 
-<div class="all-comments-box">
+<div class="all-answers-box">
   <h2>Answers on This Question</h2>
 
-  {{#if question.comments}}
+  {{#if question.answers}}
 
-  {{#each question.comments as |comment|}}
-    <div class="single-comment">
-      <!-- {{comment-tile comment=comment deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}} -->
+  {{#each question.answers as |answer|}}
+    <div class="single-answer">
+      {{answer-tile answer=answer deleteAnswer="deleteAnswer" updateAnswer="updateAnswer"}}
     </div>
   {{/each}}
 
@@ -37,4 +37,4 @@
   {{/if}}
 </div>
 
-<!-- {{new-comment saveAnswer="saveAnswer" question=question}} -->
+{{new-answer saveAnswer="saveAnswer" question=question}}
