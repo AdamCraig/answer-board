@@ -1,6 +1,9 @@
+![Main Question Page](screenshot1.png)
+![Add Answer Section](screenshot2.png)
+
 # Answer Board
 
-An Ember 2 web app question and answer site where users can view, add and modify questions, as well as post and modify answers to those questions.
+An Undertale-themed Ember 2 web app question and answer site where users can view, add and modify questions, as well as post and modify answers to those questions.
 
 ## Created By Adam Craig
 
